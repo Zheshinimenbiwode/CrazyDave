@@ -1,0 +1,240 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/plant_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_plant_info">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <!-- 页面标题 -->
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:background="#00FF0000"
+                app:srcCompat="@drawable/chevron" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="我的植物库"
+                android:textColor="#50B490"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- 植物列表 -->
+        <GridLayout
+            android:id="@+id/gl_plants"
+            android:layout_width="match_parent"
+            android:layout_height="701dp"
+            android:layout_weight="1"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="4">
+
+            <!-- 植物项（示例） -->
+            <LinearLayout
+                android:id="@+id/ll_plant1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_plant1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pugongying" />
+
+                <TextView
+                    android:id="@+id/tv_plant1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="蒲公英"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- 植物项（示例） -->
+            <LinearLayout
+                android:id="@+id/ll_plant2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_plant2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/yezi" />
+
+                <TextView
+                    android:id="@+id/tv_plant2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="椰子树"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <!-- 植物项（示例） -->
+            <LinearLayout
+                android:id="@+id/ll_plant3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_plant3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/diyi" />
+
+                <TextView
+                    android:id="@+id/tv_plant3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="地衣"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+            <!-- 植物项（示例） -->
+            <LinearLayout
+                android:id="@+id/ll_plant4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_plant4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/rongshu" />
+
+                <TextView
+                    android:id="@+id/tv_plant4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="榕树"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <!-- 跳转花园按钮 -->
+        <Button
+            android:id="@+id/btn_add_plant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="添加新植物"
+            android:textColor="#FFFFFF"
+
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="#91010201"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E0FDED"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:weight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- 第一排：标题和图片 -->
+        <LinearLayout
+            android:id="@+id/ll_plant5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/info_pic_plant5"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/yezi" />
+
+            <TextView
+                android:id="@+id/info_name_plant5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="棕榈树"
+                android:textColor="#CD41A46D"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- 下一列：文字介绍 -->
+        <TextView
+            android:id="@+id/info_detel_plant5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="20dp"
+            android:text="   棕树是棕榈科棕榈属植物。乔木状，树干圆柱形，被不易脱落的老叶柄基部和密集的网状纤维，裸露树干直径10-15厘米，甚至更粗；叶片呈圆形或近圆形，叶柄两侧具细圆齿；花絮粗壮，从叶腋抽出，通常是雌雄异株；果实阔肾形，成熟时由黄色变为淡蓝色；花期4月；果期12月。"
+            android:textColor="#CD1B4D31"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
