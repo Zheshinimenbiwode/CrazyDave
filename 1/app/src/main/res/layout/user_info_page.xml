@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:id="@+id/user_info"
     android:background="@drawable/bgnomal"
@@ -18,13 +18,14 @@
             android:orientation="vertical"
             android:layout_marginBottom="16dp">
             <ImageButton
+                android:id="@+id/back_icon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="#00FF0000"
                 app:srcCompat="@drawable/chevron" />
             <ImageView
                 android:layout_width="850dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:src="@drawable/image"
                 android:layout_gravity="center_horizontal"
 
@@ -34,143 +35,189 @@
                 android:textSize="18sp"
                 android:text="飞飞飞小蜜蜂"
                 android:textStyle="bold"
+                android:textColor="#5CAD8D"
                 android:paddingVertical="20dp"
                 android:gravity="center_horizontal" />
 
-            <Button android:layout_width="100dp"
-                android:layout_height="30dp"
+            <Button
+                android:id="@+id/jion_icon"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/little_button"
                 android:text="加入植物岛"
-                android:textSize="10sp"
                 android:textColor="#4B7E6A"
-                android:background="@drawable/button"
-                android:gravity="center_horizontal"/>
+                android:textSize="10sp" />
 
 
 
-            <LinearLayout android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp">
 
 
-
-                </LinearLayout>
-
-                <LinearLayout android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="关注者"
+                        android:gravity="center_horizontal"
                         android:textSize="16sp" />
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="391个"
+                        android:gravity="center_horizontal"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
+
+
                 </LinearLayout>
 
-                <LinearLayout android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="粉丝"
+                        android:gravity="center_horizontal"
                         android:textSize="16sp" />
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="13个"
                         android:textSize="16sp"
+                        android:gravity="center_horizontal"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
-                <LinearLayout android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="获赞"
+                        android:gravity="center_horizontal"
                         android:textSize="16sp" />
 
-                    <TextView android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="567个"
+                        android:gravity="center_horizontal"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingVertical="50dp"
+                android:paddingHorizontal="15dp"
                 android:orientation="vertical">
 
+
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:background="#FFFFFF"
                     android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/history_icon" />
                     <TextView
+
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingHorizontal="10dp"
                         android:text="历史记录"
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:layout_width="24dp"
+                        android:layout_width="10dp"
                         android:layout_height="24dp"
                         android:src="@drawable/arrow_right" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:background="#FFFFFF"
                     android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/set_icon" />
 
                     <TextView
                         android:layout_width="200dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingHorizontal="10dp"
                         android:text="设置"
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:layout_width="24dp"
+                        android:layout_width="10dp"
                         android:layout_height="24dp"
                         android:src="@drawable/arrow_right" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:background="#FFFFFF"
                     android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
 
+                        android:src="@drawable/help_icon" />
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="帮助与反馈"
+                        android:paddingLeft="10dp"
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:layout_width="24dp"
+                        android:layout_width="10dp"
                         android:layout_height="24dp"
+
                         android:src="@drawable/arrow_right" />
 
                 </LinearLayout>
@@ -179,7 +226,5 @@
 
         </LinearLayout>
 
-        </LinearLayout>
-
-</LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
