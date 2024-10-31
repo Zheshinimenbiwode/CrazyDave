@@ -31,13 +31,12 @@
 
             <TextView
                 android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_gravity="00center"
-
-                android:text="我的植物库"
+                android:gravity="center_horizontal"
+                android:text="社区"
                 android:textColor="#50B490"
-                android:textSize="16sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -48,9 +47,9 @@
             android:layout_width="match_parent"
             android:layout_height="701dp"
             android:layout_weight="1"
-            android:columnCount="4"
+            android:columnCount="2"
             android:orientation="horizontal"
-            android:rowCount="4">
+            android:rowCount="2">
 
             <!-- 植物项（示例） -->
             <LinearLayout
@@ -63,17 +62,17 @@
 
                 <ImageView
                     android:id="@+id/iv_plant1"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/pugongying" />
+                    android:src="@drawable/foriest" />
 
                 <TextView
                     android:id="@+id/tv_plant1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="蒲公英"
+                    android:text="飞的植物岛"
                     android:textSize="16sp" />
 
             </LinearLayout>
