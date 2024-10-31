@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:padding="100dp"
+
                 android:text="我的植物库"
                 android:textColor="#50B490"
                 android:textSize="16sp"
