@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/background"
-        android:paddingVertical="60dp"
-        android:paddingHorizontal="30dp"
+        android:background="@drawable/bgnomal"
+        android:paddingVertical="40dp"
+        android:paddingHorizontal="20dp"
         >
 
         <LinearLayout

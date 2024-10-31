@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/user_info"
+    android:background="@drawable/bgnomal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00FF0000"
+                app:srcCompat="@drawable/chevron" />
+            <ImageView
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:src="@drawable/image"
+                android:layout_gravity="center_horizontal"
+
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="飞飞飞小蜜蜂"
+                android:textStyle="bold"
+                android:paddingVertical="20dp"
+                android:gravity="center_horizontal" />
+
+            <Button android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="加入植物岛"
+                android:textSize="10sp"
+                android:textColor="#4B7E6A"
+                android:background="@drawable/button"
+                android:gravity="center_horizontal"/>
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="关注者"
+                        android:textSize="16sp" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="391个"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="粉丝"
+                        android:textSize="16sp" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13个"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="获赞"
+                        android:textSize="16sp" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="567个"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="历史记录"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/arrow_right" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="设置"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/arrow_right" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="帮助与反馈"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/arrow_right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
