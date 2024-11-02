@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/home_background2"
+    tools:context="home">
+
+    <ImageButton
+        android:id="@+id/home_button1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="620dp"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:background="#00FF0000"
+        app:srcCompat="@drawable/home_image2" />
+
+    <ImageButton
+        android:id="@+id/home_button2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="612dp"
+        android:background="#00FF0000"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:srcCompat="@drawable/home_image3" />
+
+    <ImageButton
+        android:id="@+id/home_button3"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="623dp"
+        android:background="#00FF0000"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:srcCompat="@drawable/home_image4" />
+
+
+</LinearLayout>

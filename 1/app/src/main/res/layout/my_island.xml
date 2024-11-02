@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/myisland_background"
+    tools:context="home">
+
+    <ImageButton
+        android:id="@+id/home_button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="520dp"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:background="#00FF0000"
+        app:srcCompat="@drawable/myisland_image1" />
+
+    <ImageButton
+        android:id="@+id/home_button2"
+        android:layout_width="38dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="346dp"
+        android:layout_marginTop="83dp"
+        android:background="#00FF0000"
+        android:scaleType="fitXY"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        app:srcCompat="@drawable/myisland_image2" />
+
+</LinearLayout>
