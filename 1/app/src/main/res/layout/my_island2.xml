@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgnomal"
+    tools:context="home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgnomal"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <!-- 页面标题 -->
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:background="#00FF0000"
+                app:srcCompat="@drawable/chevron" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:text="飞的植物岛"
+                android:textColor="#50B490"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#00FF0000"
+            android:src="@drawable/home">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="最近一次装饰于 10-12"
+            android:textColor="#408972"
+            android:textSize="18sp"
+            android:textStyle="normal"
+
+        <ImageButton
+            android:id="@+id/myisland_button1"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="0dp"
+            android:background="#00FF0000"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="0dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/myisland_image1" />
+
+        <LinearLayout
+
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="280dp"
+            android:orientation="vertical"
+
+            tools:context="function">
+
+            <ImageButton
+                android:id="@+id/myisland_button3"
+                android:layout_width="38dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#00FF0000"
+                android:paddingHorizontal="0dp"
+                android:paddingVertical="0dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/hart" />
+
+            <TextView
+                android:id="@+id/like_number"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="1200"
+                android:textColor="#B5DAD9"
+                android:textSize="12sp"
+                android:textStyle="normal"
+
+            <ImageButton
+                android:id="@+id/myisland_button2"
+                android:layout_width="38dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#00FF0000"
+                android:paddingHorizontal="0dp"
+                android:paddingVertical="0dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/myisland_image2" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
