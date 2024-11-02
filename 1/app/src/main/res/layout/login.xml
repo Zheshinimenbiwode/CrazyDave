@@ -60,7 +60,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="7dp"
         android:text="注册"
-        android:textSize="18dp"
-        android:textColor="#73C5AA"/>
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#73C5AA"
+        android:background="@drawable/bg_register_button"
+        android:elevation="0dp"/>
 
 </LinearLayout>
