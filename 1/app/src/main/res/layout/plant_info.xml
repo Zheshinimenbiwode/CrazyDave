@@ -187,7 +187,7 @@
         android:background="#E0FDED"
         android:orientation="vertical"
         android:paddingBottom="16dp"
-        android:weight="1dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints">
 
