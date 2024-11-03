@@ -1,5 +1,6 @@
 package com.example.crazydave;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -37,12 +38,13 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerAdapter adapter;
     private List<RecyclerItem> items = new ArrayList<>();
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recycler_it);
+        recyclerView = findViewById(R.id.recycler);
 
         // 初始化数据
         for (int i = 0; i < 20; i++) {

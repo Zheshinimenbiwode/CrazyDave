@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".My_plant_resourse">
+    >
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -46,14 +46,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:id="@+id/recycler_it"
-        app:layout_constrainBottom_toBottomOf="parent"
-        >
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:id="@+id/recycler"
+         />
     <!-- 跳转花园按钮 -->
     <Button
         android:id="@+id/btn_add_plant"
