@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:id="@+id/recycler"
+    android:background="@drawable/itembg"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/recycler_image"
+        android:layout_width="match_parent"
+        android:src="@drawable/yezi"
+        android:layout_height="86dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/recycler_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="椰子树"
+        android:textSize="14dp"
+        android:textColor="#4D6854">
+
+    </TextView>
+</LinearLayout>

@@ -43,120 +43,17 @@
     </LinearLayout>
 
     <!-- 植物列表 -->
-    <GridLayout
-        android:id="@+id/gl_plants"
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="701dp"
-        android:layout_weight="1"
-        android:columnCount="4"
-        android:orientation="horizontal"
-        android:rowCount="4">
+        android:layout_height="600dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/recycler_it"
+        app:layout_constrainBottom_toBottomOf="parent"
+        >
 
-        <!-- 植物项（示例） -->
-        <LinearLayout
-            android:id="@+id/ll_plant1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/iv_plant1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/pugongying" />
-
-            <TextView
-                android:id="@+id/tv_plant1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="蒲公英"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <!-- 植物项（示例） -->
-        <LinearLayout
-            android:id="@+id/ll_plant2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/iv_plant2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/yezi" />
-
-            <TextView
-                android:id="@+id/tv_plant2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="椰子树"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-        <!-- 植物项（示例） -->
-        <LinearLayout
-            android:id="@+id/ll_plant3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/iv_plant3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/diyi" />
-
-            <TextView
-                android:id="@+id/tv_plant3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="地衣"
-                android:textSize="16sp" />
-
-
-        </LinearLayout>
-            <!-- 植物项（示例） -->
-        <LinearLayout
-        android:id="@+id/ll_plant4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/iv_plant4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/rongshu" />
-
-        <TextView
-            android:id="@+id/tv_plant4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="榕树"
-            android:textSize="16sp" />
-
-        </LinearLayout>
-
-    </GridLayout>
-
+    </androidx.recyclerview.widget.RecyclerView>
     <!-- 跳转花园按钮 -->
     <Button
         android:id="@+id/btn_add_plant"
