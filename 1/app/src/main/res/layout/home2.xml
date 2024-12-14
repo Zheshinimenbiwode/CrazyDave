@@ -42,7 +42,7 @@
                 <ImageButton
                     android:id="@+id/dropButton"
                     android:layout_width="376dp"
-                    android:layout_height="20dp"
+                    android:layout_height="18dp"
                     android:background="#00FF0000"
                     android:scaleType="fitXY"
                     android:paddingHorizontal="0dp"
